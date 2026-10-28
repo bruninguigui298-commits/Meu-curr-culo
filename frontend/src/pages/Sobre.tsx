@@ -1,0 +1,64 @@
+import { Link } from 'react-router-dom';
+import { PhotoSlot } from '../components/PhotoSlot';
+import { VideoSlot } from '../components/VideoSlot';
+import { useDocumentTitle } from '../hooks/useDocumentTitle';
+import { profile, skills } from '../lib/profile';
+
+const SKILL_LABELS: Record<keyof typeof skills, string> = {
+  backend: 'Back-end',
+  frontend: 'Front-end',
+  qualidade: 'Qualidade',
+  entrega: 'Entrega',
+  ia: 'Trabalho com IA',
+  pessoas: 'Da área comercial',
+};
+
+export function Sobre() {
+  useDocumentTitle('Sobre');
+  return (
+    <div className="wrap page">
+      <p className="eyebrow">Sobre</p>
+      <div className="about">
+        <div className="about__text">
+          <h1 className="display">Oi, eu sou o Bruno.</h1>
+          <p className="lead">
+            Tenho {profile.age} anos e sou do {profile.location}. Comecei na área comercial: atendendo, negociando e
+            resolvendo problema de cliente. Migrei para tecnologia e estou na fase final do curso de{' '}
+            {profile.education.course}.
+          </p>
+          <p>
+            Sou <strong>vibe coder</strong> e falo isso abertamente: programo com IA (o Claude Code) como copiloto. Isso
+            não quer dizer "a IA faz e eu publico". Quer dizer que eu escrevo o pedido com contexto, decido o plano, leio o
+            que foi gerado, exijo testes, passo o checklist de LGPD e acessibilidade e só então faço o deploy. Quem
+            responde pelo que está no ar sou eu.
+          </p>
+          <p>
+            Faço parte da <strong>{profile.company.name}</strong>, com o {profile.company.partner}: {profile.company.what}.
+            Estou buscando uma oportunidade como desenvolvedor, onde eu possa somar a visão de quem já esteve do lado do
+            cliente com a velocidade de quem constrói com IA.
+          </p>
+          <p>
+            <Link to="/projetos" className="arrow-link">Veja o que já está no ar →</Link>
+          </p>
+        </div>
+        <PhotoSlot size={280} />
+      </div>
+
+      <VideoSlot />
+
+      <section aria-labelledby="skills-titulo" className="section">
+        <h2 id="skills-titulo" className="h2">O que eu uso</h2>
+        <div className="skills">
+          {(Object.keys(skills) as (keyof typeof skills)[]).map((k) => (
+            <div key={k} className="skills__group">
+              <h3 className="skills__t">{SKILL_LABELS[k]}</h3>
+              <ul className="tags">
+                {skills[k].map((s) => <li key={s}>{s}</li>)}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </section>
+    </div>
+  );
+}

@@ -1,0 +1,26 @@
+:root {
+  --paper: #f4f1ea;
+  --paper-2: #fbf9f4;
+  --paper-3: #e9e4d8;
+  --ink: #14130f;
+  --muted: #55514a;
+  --line: #d9d3c4;
+  --accent: #b93c0f; /* texto em destaque: contraste AA sobre o papel */
+  --orange: #e8622c; /* só sobre fundo escuro */
+  --ok: #1f7a3e;
+  --warn: #8a5a00;
+  --dark: #14130f;
+  --dark-2: #1a1915;
+  --dark-line: #3a3830;
+  --dark-text: #ece8df;
+  --dark-muted: #bdb8ac;
+  --focus: #0b57d0;
+
+  --serif: 'Instrument Serif', Georgia, 'Times New Roman', serif;
+  --sans: 'Geist', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --mono: 'Geist Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+
+  --wrap: 1280px;
+  --gutter: clamp(16px, 5vw, 80px);
+  --radius: 14px;
+}
