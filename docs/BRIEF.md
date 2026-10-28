@@ -100,4 +100,4 @@ como identidade principal — o site é do Bruno; Lions aparece como empresa ond
 - ~~GitHub~~ → principal: github.com/bruninguigui298-commits.
 - ~~Certificado~~ → link de verificação do SENAI autorizado e publicado.
 - "O que deu errado e como resolvi" de cada projeto, com as palavras dele; prints dos sistemas.
-- Domínio: o Bruno já tem um na Hostinger → passo a passo em docs/DOMINIO.md. Falta o deploy no Render.
+- Domínio: **brunosyster.com** (Hostinger) → passo a passo em docs/DOMINIO.md. Falta o deploy no Render.

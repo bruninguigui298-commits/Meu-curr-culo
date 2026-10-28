@@ -1,7 +1,7 @@
 # Domínio da Hostinger no Render
 
 O domínio continua registrado na Hostinger. Lá você só muda os **registros DNS** para apontarem para o serviço no Render.
-Troque `seudominio.com.br` pelo seu domínio de verdade.
+Domínio do Bruno: **brunosyster.com** (registrado na Hostinger).
 
 ## 1. Publicar o site no Render (se ainda não publicou)
 
@@ -14,7 +14,7 @@ Troque `seudominio.com.br` pelo seu domínio de verdade.
 
 Serviço `bruno-curriculo` → **Settings → Custom Domains → Add Custom Domain**:
 
-- adicione `seudominio.com.br` (o Render adiciona o `www` como redirecionamento, ou o contrário).
+- adicione `brunosyster.com` (o Render adiciona o `www` como redirecionamento, ou o contrário).
 
 O Render mostra os registros que espera. Confira se batem com os do passo 3.
 
