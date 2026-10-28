@@ -30,8 +30,8 @@ export function Curriculo() {
         <section>
           <h2>Resumo</h2>
           <p>
-            Desenvolvedor back-end formado pelo SENAI, vindo da logística e da área comercial. Construo sistemas completos com o Claude Code como copiloto:
-            eu defino o escopo, reviso cada mudança, exijo testes e publico. Oito sistemas no ar, com backend em camadas
+            Desenvolvedor back-end formado pelo SENAI, vindo da logística e da área comercial. Programo sozinho e hoje trabalho com vibe coding (Claude Code
+            como copiloto): eu defino o escopo, reviso cada mudança, exijo testes e publico. Oito sistemas no ar, com backend em camadas
             (Node.js, TypeScript, Express, SQL puro), testes com Vitest e deploy no Render. Trago da experiência comercial a
             comunicação, a negociação e o foco no problema do cliente.
           </p>

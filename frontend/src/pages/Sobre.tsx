@@ -3,6 +3,7 @@ import { PhotoSlot } from '../components/PhotoSlot';
 import { VideoSlot } from '../components/VideoSlot';
 import { useDocumentTitle } from '../hooks/useDocumentTitle';
 import { profile, skills } from '../lib/profile';
+import { liveProjects } from '../lib/projects';
 
 const SKILL_LABELS: Record<keyof typeof skills, string> = {
   backend: 'Back-end',
@@ -20,16 +21,24 @@ export function Sobre() {
       <p className="eyebrow">Sobre</p>
       <div className="about">
         <div className="about__text">
-          <h1 className="display">Oi, eu sou o Bruno.</h1>
+          <h1 className="display">Entreguei mercadoria por seis anos. Agora entrego sistemas.</h1>
+          <dl className="manifest" aria-label="Ficha do Bruno">
+            <div><dt>Remetente</dt><dd>{profile.name}, {profile.age} anos</dd></div>
+            <div><dt>Origem</dt><dd>{profile.location}</dd></div>
+            <div><dt>Rota</dt><dd>Jovem Aprendiz, logística, vendas, SENAI</dd></div>
+            <div><dt>Carga</dt><dd>{liveProjects.length} sistemas no ar</dd></div>
+            <div><dt>Modo</dt><dd>programo sozinho e acelero com vibe coding</dd></div>
+          </dl>
           <p className="lead">
-            Tenho {profile.age} anos e sou de {profile.location}. Trabalho desde 2019 na Luitex Máquinas e Ferramentas:
+            Trabalho desde 2019 na Luitex Máquinas e Ferramentas:
             comecei como jovem aprendiz, passei seis anos na logística e hoje estou nas vendas — atendendo, negociando e
             resolvendo problema de cliente. Em 2026 concluí o curso de {profile.education.course} no SENAI
             ({profile.education.hours} horas) e comecei a construir sistemas de verdade.
           </p>
           <p>
-            Sou <strong>vibe coder</strong> e falo isso abertamente: programo com IA (o Claude Code) como copiloto. Isso
-            não quer dizer "a IA faz e eu publico". Quer dizer que eu escrevo o pedido com contexto, decido o plano, leio o
+            <strong>Sei programar sozinho</strong>: lógica, JavaScript, Node.js, SQL e APIs são a minha base. E hoje eu
+            também sou <strong>vibe coder</strong>, e falo isso abertamente: uso IA (o Claude Code) como copiloto para
+            ir mais rápido. Isso não quer dizer "a IA faz e eu publico". Quer dizer que eu escrevo o pedido com contexto, decido o plano, leio o
             que foi gerado, exijo testes, passo o checklist de LGPD e acessibilidade e só então faço o deploy. Quem
             responde pelo que está no ar sou eu.
           </p>
@@ -39,7 +48,7 @@ export function Sobre() {
             cliente com a velocidade de quem constrói com IA.
           </p>
           <p>
-            <Link to="/projetos" className="arrow-link">Veja o que já está no ar →</Link>
+            <Link to="/projetos" className="arrow-link">Veja o que já está no ar</Link>
           </p>
         </div>
         <PhotoSlot size={280} />

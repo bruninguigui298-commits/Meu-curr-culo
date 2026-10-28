@@ -57,3 +57,18 @@ describe('abertura que se constrói', () => {
     expect(screen.getByText(/Pedido do Bruno à IA/)).toBeTruthy();
   });
 });
+
+describe('terminal interativo', () => {
+  it('depois da abertura responde comandos digitados e pelas sugestões', async () => {
+    mockMotion(true);
+    vi.stubGlobal('fetch', vi.fn(() => new Promise(() => {})));
+    render(<MemoryRouter><Home /></MemoryRouter>);
+    const input = screen.getByLabelText('você ›');
+    await userEvent.type(input, 'programo{Enter}');
+    expect(screen.getByText(/Sei programar sem IA/)).toBeTruthy();
+    await userEvent.click(screen.getByRole('button', { name: 'contato' }));
+    expect(screen.getByText(/bruno12pereira472@gmail.com/, { selector: '.term__out' })).toBeTruthy();
+    await userEvent.type(input, 'limpar{Enter}');
+    expect(screen.queryByText(/Sei programar sem IA/)).toBeNull();
+  });
+});

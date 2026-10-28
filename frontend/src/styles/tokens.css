@@ -1,26 +1,30 @@
+/*
+ * Sistema visual "rota": azul-noite, com a rota em ciano-aurora → âmbar de sinal.
+ * Contrastes sobre --noite conferidos com axe (WCAG AA).
+ */
 :root {
-  --paper: #f4f1ea;
-  --paper-2: #fbf9f4;
-  --paper-3: #e9e4d8;
-  --ink: #14130f;
-  --muted: #55514a;
-  --line: #d9d3c4;
-  --accent: #b93c0f; /* texto em destaque: contraste AA sobre o papel */
-  --orange: #e8622c; /* só sobre fundo escuro */
-  --ok: #1f7a3e;
-  --warn: #8a5a00;
-  --dark: #14130f;
-  --dark-2: #1a1915;
-  --dark-line: #3a3830;
-  --dark-text: #ece8df;
-  --dark-muted: #bdb8ac;
-  --focus: #0b57d0;
+  color-scheme: dark;
+  --noite: #0e1024;
+  --noite-2: #14173a;
+  --noite-3: #1b1f4a;
+  --gelo: #eef0ff;
+  --nevoa: #a4a9c9;
+  --aurora: #6ff2d8;
+  --ambar: #ffb547;
+  --lilas: #9c8cff;
+  --ok: #6ff2a1;
+  --alerta: #ffb547;
+  --erro: #ff8a8a;
+  --vidro: rgba(238, 240, 255, 0.045);
+  --vidro-2: rgba(238, 240, 255, 0.08);
+  --borda: rgba(238, 240, 255, 0.12);
+  --rota: linear-gradient(180deg, var(--aurora), var(--lilas) 55%, var(--ambar));
+  --rota-h: linear-gradient(90deg, var(--aurora), var(--lilas) 55%, var(--ambar));
 
-  --serif: 'Instrument Serif', Georgia, 'Times New Roman', serif;
   --sans: 'Geist', system-ui, -apple-system, 'Segoe UI', sans-serif;
   --mono: 'Geist Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
 
-  --wrap: 1280px;
-  --gutter: clamp(16px, 5vw, 80px);
-  --radius: 14px;
+  --wrap: 1240px;
+  --gutter: clamp(18px, 5vw, 72px);
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
 }

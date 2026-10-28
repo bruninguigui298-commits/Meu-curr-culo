@@ -10,8 +10,9 @@ export function ComoTrabalho() {
         <p className="eyebrow">Como eu trabalho com IA</p>
         <h1 className="display">Eu dirijo, a IA acelera.</h1>
         <p className="lead">
-          Em 2026 ninguém precisa fingir que não usa IA. O que importa é saber <em>como</em> usa: quem decide, quem
-          confere e quem responde pelo resultado. Este é o meu fluxo real, o mesmo usado para construir este site.
+          Eu sei programar sem IA: é a base que aprendi no SENAI. Hoje eu escolho trabalhar com vibe coding porque
+          acelera muito. O que importa é <em>como</em>: quem decide, quem confere e quem responde pelo resultado. Este é
+          o meu fluxo real, o mesmo usado para construir este site.
         </p>
       </div>
 
