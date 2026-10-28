@@ -1,0 +1,13 @@
+{
+  "name": "bruno-curriculo",
+  "private": true,
+  "description": "Site-currículo/portfólio do Bruno Pereira Bento. Atalhos para rodar backend e frontend.",
+  "scripts": {
+    "install:all": "npm ci --prefix backend && npm ci --prefix frontend",
+    "build": "npm run build --prefix frontend && npm run build --prefix backend",
+    "test": "npm test --prefix backend && npm test --prefix frontend",
+    "typecheck": "npm run typecheck --prefix backend && npm run typecheck --prefix frontend",
+    "demo": "npm run build --prefix frontend && npm run dev:demo --prefix backend",
+    "start": "npm start --prefix backend"
+  }
+}
