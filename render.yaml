@@ -1,0 +1,29 @@
+# Um serviço só: a API (Express) também entrega o build do site (frontend/dist).
+services:
+  - type: web
+    name: bruno-curriculo
+    runtime: node
+    plan: free
+    region: oregon
+    buildCommand: npm ci --include=dev --prefix backend && npm ci --include=dev --prefix frontend && npm run build --prefix frontend && npm run build --prefix backend
+    startCommand: npm start --prefix backend
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_VERSION
+        value: "22"
+      # Postgres gerenciado (Neon, Aiven ou Render Postgres). Preencher no painel do Render.
+      - key: DATABASE_URL
+        sync: false
+      # Senha do /admin (12+ caracteres). Preencher no painel do Render.
+      - key: ADMIN_PASSWORD
+        sync: false
+      # Gerado pelo Render: assina o cookie de sessão do admin.
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: STATUS_TIMEOUT_MS
+        value: "8000"
+      - key: STATUS_CACHE_SECONDS
+        value: "300"
