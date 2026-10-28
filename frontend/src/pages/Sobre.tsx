@@ -28,8 +28,9 @@ export function Sobre() {
             ({profile.education.hours} horas) e comecei a construir sistemas de verdade.
           </p>
           <p>
-            Sou <strong>vibe coder</strong> e falo isso abertamente: programo com IA (o Claude Code) como copiloto. Isso
-            não quer dizer "a IA faz e eu publico". Quer dizer que eu escrevo o pedido com contexto, decido o plano, leio o
+            <strong>Sei programar sozinho</strong>: lógica, JavaScript, Node.js, SQL e APIs são a minha base. E hoje eu
+            também sou <strong>vibe coder</strong>, e falo isso abertamente: uso IA (o Claude Code) como copiloto para
+            ir mais rápido. Isso não quer dizer "a IA faz e eu publico". Quer dizer que eu escrevo o pedido com contexto, decido o plano, leio o
             que foi gerado, exijo testes, passo o checklist de LGPD e acessibilidade e só então faço o deploy. Quem
             responde pelo que está no ar sou eu.
           </p>

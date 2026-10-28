@@ -29,7 +29,7 @@ export const timeline: TimelineItem[] = [
   {
     title: 'Primeiros sistemas com IA',
     when: '2026',
-    text: 'Comecei a construir com o Claude Code como copiloto: backend em camadas, testes e deploy. Oito sistemas estão no ar hoje.',
+    text: 'Com a base do curso, passei a construir sistemas completos. Programo sozinho e uso vibe coding com o Claude Code para acelerar: backend em camadas, testes e deploy. Oito estão no ar hoje.',
   },
   {
     title: 'Lions Company',

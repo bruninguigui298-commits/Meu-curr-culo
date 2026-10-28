@@ -32,7 +32,7 @@ export function StatusBadge({ status, loading, error, privateProject, long }: Pr
   return (
     <span className="status status--warn" title="Servidores gratuitos do Render dormem sem visitas e levam alguns segundos para acordar.">
       <span className="status__dot" aria-hidden="true" />
-      {long ? 'sem resposta no tempo limite — o servidor gratuito pode estar acordando' : 'acordando / sem resposta'}
+      {long ? 'sem resposta no tempo limite — o servidor gratuito pode estar acordando' : 'sem resposta'}
     </span>
   );
 }

@@ -4,8 +4,7 @@
 
 | Fonte | Licença | Observação |
 |---|---|---|
-| Instrument Serif | SIL Open Font License 1.1 | Títulos |
-| Geist | SIL Open Font License 1.1 | Texto |
+| Geist | SIL Open Font License 1.1 | Títulos e texto |
 | Geist Mono | SIL Open Font License 1.1 | Código e rótulos |
 
 A OFL permite usar, embutir e redistribuir as fontes no site. As fontes são servidas pelo próprio site (nada de Google Fonts), então o navegador do visitante não fala com terceiros por causa delas.
@@ -32,7 +31,7 @@ A OFL permite usar, embutir e redistribuir as fontes no site. As fontes são ser
 
 ## Imagens, fotos e vídeo
 
-- O monograma "BP" e o favicon foram desenhados para este site (texto + forma, sem imagem de terceiros).
+- O monograma "BP", o favicon e a imagem de compartilhamento (`frontend/public/og.png`, gerada por `frontend/scripts/og.cjs`) foram feitos para este site, só com texto e formas, sem imagem de terceiros.
 - **Nenhuma foto do Bruno foi gerada por IA.** Fotos, prints e vídeo serão enviados pelo próprio Bruno; ao adicionar, registrar aqui a origem (ex.: "foto tirada por Fulano, uso autorizado").
 - Prints dos projetos: são telas dos próprios sistemas. Em projetos de clientes ou da Lions Company, confirmar autorização antes de publicar.
 

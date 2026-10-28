@@ -8,7 +8,7 @@ export function Footer() {
         <div>
           <p className="footer__name">{profile.name}</p>
           <p className="footer__small">
-            Site feito por mim com o Claude Code como copiloto. Sem rastreadores de terceiros; só cookies essenciais.
+            Site programado por mim, com vibe coding no Claude Code. Sem rastreadores de terceiros; só cookies essenciais.
           </p>
         </div>
         <nav aria-label="Rodapé">

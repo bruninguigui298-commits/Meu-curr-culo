@@ -1,5 +1,7 @@
 # Figma
 
+> **Atualização (v2):** o site mudou para o tema escuro "rota" (azul-noite, ciano-aurora, âmbar, só a fonte Geist). O arquivo do Figma abaixo mostra o layout da v1 e serve como histórico; a fonte da verdade do visual agora é `frontend/src/styles/tokens.css`.
+
 Arquivo de layout (plano Starter, 1 página usada): **https://www.figma.com/design/neZ6bsLsv9FaSilRUwOC1i**
 
 O que tem lá (página "Site v1"):
