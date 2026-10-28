@@ -85,8 +85,19 @@ como identidade principal — o site é do Bruno; Lions aparece como empresa ond
   sem promessas falsas, `docs/LICENCAS.md`, recomendar revisão jurídica.
 - Português do Brasil em tudo. Commits pequenos; uma branch + PR por parte (o Bruno faz merge pelo navegador).
 
+## Atualização (out/2026) — dados enviados pelo Bruno (currículo em PDF + certificado)
+
+- Cidade: **Sumaré/SP**.
+- Formação: **Desenvolvedor Back-end — SENAI "Dr. Celso Charuri", Sumaré/SP**, 160 h, 20/05/2026 a 07/10/2026, **concluído**.
+  Ensino Médio completo. Curso de inglês pausado (não se adaptou ao EAD): inglês básico, em desenvolvimento.
+- Experiência: **Luitex Máquinas e Ferramentas** — Jovem Aprendiz (2019), Auxiliar de Logística (2019–2025), Vendedor (2025–atual).
+- Não publicar o PDF do certificado (tem o RG).
+
 ## Pendências com o Bruno
 
 - Fotos dele (rosto/ambiente de trabalho) e, se quiser, vídeo/áudio de apresentação.
-- Cidade, telefone público (sim/não), formação exata (instituição, previsão de conclusão), experiência comercial (empresas/anos).
+- Telefone público (sim/não) — está no currículo em PDF, mas o site só publica com autorização.
+- GitHub: o PDF cita github.com/polonuss/Bruno-Pereira-Bento; o site usa github.com/bruninguigui298-commits. Qual é o principal?
+- Link público de verificação do certificado SENAI no site (sim/não) — conferir antes se a página de verificação mostra o RG.
+- "O que deu errado e como resolvi" de cada projeto, com as palavras dele; prints dos sistemas.
 - Domínio próprio (ex.: brunopereira.dev) e deploy no Render.

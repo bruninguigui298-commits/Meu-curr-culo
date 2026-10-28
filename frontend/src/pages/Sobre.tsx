@@ -22,9 +22,10 @@ export function Sobre() {
         <div className="about__text">
           <h1 className="display">Oi, eu sou o Bruno.</h1>
           <p className="lead">
-            Tenho {profile.age} anos e sou do {profile.location}. Comecei na área comercial: atendendo, negociando e
-            resolvendo problema de cliente. Migrei para tecnologia e estou na fase final do curso de{' '}
-            {profile.education.course}.
+            Tenho {profile.age} anos e sou de {profile.location}. Trabalho desde 2019 na Luitex Máquinas e Ferramentas:
+            comecei como jovem aprendiz, passei seis anos na logística e hoje estou nas vendas — atendendo, negociando e
+            resolvendo problema de cliente. Em 2026 concluí o curso de {profile.education.course} no SENAI
+            ({profile.education.hours} horas) e comecei a construir sistemas de verdade.
           </p>
           <p>
             Sou <strong>vibe coder</strong> e falo isso abertamente: programo com IA (o Claude Code) como copiloto. Isso

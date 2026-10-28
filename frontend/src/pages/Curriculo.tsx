@@ -2,7 +2,6 @@ import { useDocumentTitle } from '../hooks/useDocumentTitle';
 import { hostOf } from '../lib/format';
 import { profile, skills } from '../lib/profile';
 import { projects } from '../lib/projects';
-import { timeline } from '../lib/timeline';
 
 /** Versão recrutador: limpa, uma coluna, cabe em A4 (salvar como PDF pelo navegador). */
 export function Curriculo() {
@@ -31,7 +30,7 @@ export function Curriculo() {
         <section>
           <h2>Resumo</h2>
           <p>
-            Desenvolvedor back-end vindo da área comercial. Construo sistemas completos com o Claude Code como copiloto:
+            Desenvolvedor back-end formado pelo SENAI, vindo da logística e da área comercial. Construo sistemas completos com o Claude Code como copiloto:
             eu defino o escopo, reviso cada mudança, exijo testes e publico. Oito sistemas no ar, com backend em camadas
             (Node.js, TypeScript, Express, SQL puro), testes com Vitest e deploy no Render. Trago da experiência comercial a
             comunicação, a negociação e o foco no problema do cliente.
@@ -53,18 +52,21 @@ export function Curriculo() {
         <section>
           <h2>Experiência</h2>
           <ul className="cv__list">
-            <li><strong>{profile.company.name}</strong> — {profile.company.what}, com o {profile.company.partner}.</li>
-            <li><strong>Área comercial</strong> — atendimento, negociação e resolução de problemas.</li>
+            <li><strong>{profile.company.name}</strong> — {profile.company.what}, com o {profile.company.partner}. Projetos acima.</li>
+            <li>
+              <strong>Luitex Máquinas e Ferramentas</strong> —{' '}
+              {profile.experience.map((e) => `${e.role} (${e.period})`).join(' · ')}. Atendimento ao cliente, organização,
+              trabalho em equipe e resolução de problemas.
+            </li>
           </ul>
         </section>
 
         <section>
           <h2>Formação</h2>
           <p>
-            <strong>{edu.course}</strong>
-            {edu.institution ? ` — ${edu.institution}` : ''} · {edu.status}
-            {edu.expected ? ` (previsão: ${edu.expected})` : ''}
+            <strong>{edu.course}</strong> — {edu.institution} · {edu.hours} h · {edu.period} · {edu.status}
           </p>
+          <p>{edu.highSchool}</p>
         </section>
 
         <section>
@@ -75,9 +77,9 @@ export function Curriculo() {
           <p><strong>IA:</strong> {skills.ia.join(', ')}.</p>
         </section>
 
-        <section className="cv__timeline">
-          <h2>Trajetória</h2>
-          <p>{timeline.map((t) => t.title).join(' → ')}</p>
+        <section>
+          <h2>Idiomas</h2>
+          <p>{profile.languages.map((l) => `${l.name} — ${l.level}`).join(' · ')}</p>
         </section>
       </article>
     </div>

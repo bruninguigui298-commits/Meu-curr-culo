@@ -8,8 +8,7 @@ export const profile = {
   age: 25,
   role: 'Desenvolvedor back-end',
   tagline: 'Eu dirijo, a IA acelera.',
-  /** Pendente: confirmar cidade com o Bruno. Enquanto isso, só o país. */
-  location: 'Brasil',
+  location: 'Sumaré/SP',
   email: 'bruno12pereira472@gmail.com',
   linkedin: 'https://www.linkedin.com/in/bruno-pereira-5727ba238/',
   github: 'https://github.com/bruninguigui298-commits',
@@ -19,21 +18,33 @@ export const profile = {
   photo: null as { src: string; alt: string } | null,
   /** Vídeo de apresentação (60–90 s): arquivo em public/video/ + legendas .vtt. */
   video: null as { src: string; captions: string; poster?: string } | null,
+  /** Fonte: certificado do SENAI enviado pelo Bruno (não publicar o PDF: ele tem o RG). */
   education: {
-    course: 'Desenvolvimento Back-end',
-    status: 'Em fase final',
-    /** Pendentes: instituição e previsão de conclusão. */
-    institution: null as string | null,
-    expected: null as string | null,
+    course: 'Desenvolvedor Back-end',
+    institution: 'SENAI "Dr. Celso Charuri" — Sumaré/SP',
+    hours: 160,
+    period: 'mai/2026 – out/2026',
+    status: 'Concluído',
+    highSchool: 'Ensino Médio completo',
   },
+  /** Fonte: currículo em PDF enviado pelo Bruno. */
+  experience: [
+    { company: 'Luitex Máquinas e Ferramentas', role: 'Vendedor', period: '2025 – atual' },
+    { company: 'Luitex Máquinas e Ferramentas', role: 'Auxiliar de Logística', period: '2019 – 2025' },
+    { company: 'Luitex Máquinas e Ferramentas', role: 'Jovem Aprendiz', period: '2019' },
+  ],
+  languages: [
+    { name: 'Português', level: 'nativo' },
+    { name: 'Inglês', level: 'básico (em desenvolvimento)' },
+  ],
   company: { name: 'Lions Company', what: 'sites, sistemas e automação', partner: 'Kaique' },
 } as const;
 
 export const skills = {
-  backend: ['Node.js', 'TypeScript', 'Express', 'SQL puro (PostgreSQL e MySQL)', 'zod', 'Prisma (MossPlay)', 'socket.io'],
-  frontend: ['React + Vite', 'Tailwind', 'PWA'],
+  backend: ['Node.js', 'TypeScript', 'Express', 'SQL puro (PostgreSQL e MySQL)', 'zod', 'Prisma (MossPlay)', 'socket.io', 'APIs REST', 'Modelagem entidade-relacionamento'],
+  frontend: ['React + Vite', 'HTML e CSS', 'JavaScript', 'Tailwind', 'PWA'],
   qualidade: ['Vitest', 'PGlite para testar SQL de verdade', 'Checklist LGPD', 'Acessibilidade (WCAG AA)'],
   entrega: ['Git e GitHub (branch + PR por parte)', 'Render', 'Neon / Aiven (bancos gerenciados)'],
   ia: ['Claude Code como copiloto', 'Prompts com contexto e critérios de aceite', 'Revisão de diff linha a linha'],
-  pessoas: ['Comunicação', 'Negociação', 'Resolução de problemas', 'Entender o problema do cliente antes do código'],
+  pessoas: ['Atendimento ao cliente', 'Comunicação', 'Negociação', 'Organização', 'Trabalho em equipe', 'Resolução de problemas'],
 };
