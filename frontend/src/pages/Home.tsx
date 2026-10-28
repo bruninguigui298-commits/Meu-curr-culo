@@ -97,7 +97,7 @@ export function Home() {
       </section>
 
       <section className="band wrap contact-cta" aria-labelledby="cta-titulo">
-        <h2 id="cta-titulo" className="display">Vamos conversar?</h2>
+        <h2 id="cta-titulo" className="display">Próxima parada: a sua equipe.</h2>
         <p>
           <Link to="/contato" className="btn btn--solid">Mandar mensagem</Link>
           <a href={`mailto:${profile.email}`} className="mono-link">{profile.email}</a>

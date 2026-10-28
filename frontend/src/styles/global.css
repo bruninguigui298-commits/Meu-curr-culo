@@ -459,3 +459,14 @@ code { font-family: var(--mono); font-size: 0.9em; }
   .cv h2 { margin-top: 10px; }
   .cv__projects li, .cv__list li { margin-bottom: 1px; }
 }
+
+/* Sobre: ficha no formato de etiqueta de envio */
+.manifest {
+  margin: 8px 0 32px; padding: 22px 24px; border-radius: 20px; max-width: 620px;
+  border: 1px dashed rgba(238, 240, 255, 0.28); background: var(--vidro);
+  font-family: var(--mono); font-size: 14px; display: grid; gap: 8px;
+}
+.manifest div { display: grid; grid-template-columns: 110px 1fr; gap: 16px; }
+.manifest dt { color: var(--ambar); }
+.manifest dd { margin: 0; color: var(--gelo); }
+@media (max-width: 520px) { .manifest div { grid-template-columns: 1fr; gap: 0; } }

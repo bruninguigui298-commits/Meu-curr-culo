@@ -41,7 +41,7 @@ export function Contato() {
   return (
     <div className="wrap page">
       <p className="eyebrow">Contato</p>
-      <h1 className="display">Vamos conversar?</h1>
+      <h1 className="display">Próxima parada: a sua equipe.</h1>
       <div className="contact">
         <div>
           <p className="lead">
