@@ -96,8 +96,8 @@ como identidade principal — o site é do Bruno; Lions aparece como empresa ond
 ## Pendências com o Bruno
 
 - Fotos dele (rosto/ambiente de trabalho) e, se quiser, vídeo/áudio de apresentação.
-- Telefone público (sim/não) — está no currículo em PDF, mas o site só publica com autorização.
-- GitHub: o PDF cita github.com/polonuss/Bruno-Pereira-Bento; o site usa github.com/bruninguigui298-commits. Qual é o principal?
-- Link público de verificação do certificado SENAI no site (sim/não) — conferir antes se a página de verificação mostra o RG.
+- ~~Telefone~~ → autorizado: (19) 98170-4814 publicado.
+- ~~GitHub~~ → principal: github.com/bruninguigui298-commits.
+- ~~Certificado~~ → link de verificação do SENAI autorizado e publicado.
 - "O que deu errado e como resolvi" de cada projeto, com as palavras dele; prints dos sistemas.
-- Domínio próprio (ex.: brunopereira.dev) e deploy no Render.
+- Domínio: o Bruno já tem um na Hostinger → passo a passo em docs/DOMINIO.md. Falta o deploy no Render.

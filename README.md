@@ -6,6 +6,7 @@ com sistemas que estão no ar — com status consultado ao vivo pelo servidor.
 - Fonte da verdade do projeto: [docs/BRIEF.md](docs/BRIEF.md)
 - Layout no Figma: [docs/FIGMA.md](docs/FIGMA.md)
 - Licenças: [docs/LICENCAS.md](docs/LICENCAS.md)
+- Domínio da Hostinger no Render: [docs/DOMINIO.md](docs/DOMINIO.md)
 
 ## Estrutura
 

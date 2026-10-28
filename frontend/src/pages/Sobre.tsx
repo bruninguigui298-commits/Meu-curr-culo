@@ -47,6 +47,25 @@ export function Sobre() {
 
       <VideoSlot />
 
+      <section aria-labelledby="formacao-titulo" className="section">
+        <h2 id="formacao-titulo" className="h2">Formação</h2>
+        <div className="edu">
+          <p className="edu__course">{profile.education.course}</p>
+          <p className="muted">
+            {profile.education.institution} · {profile.education.hours} horas · {profile.education.period} ·{' '}
+            {profile.education.status}
+          </p>
+          <p>
+            <a href={profile.education.certificateUrl} target="_blank" rel="noopener noreferrer">
+              Verificar o certificado no site do SENAI ↗<span className="sr-only"> (abre em nova aba)</span>
+            </a>
+          </p>
+          <p className="muted">
+            {profile.education.highSchool} · Idiomas: {profile.languages.map((l) => `${l.name} ${l.level}`).join(', ')}
+          </p>
+        </div>
+      </section>
+
       <section aria-labelledby="skills-titulo" className="section">
         <h2 id="skills-titulo" className="h2">O que eu uso</h2>
         <div className="skills">

@@ -23,7 +23,7 @@ export function Curriculo() {
             <li>{profile.email}</li>
             <li>linkedin.com/in/bruno-pereira-5727ba238</li>
             <li>github.com/bruninguigui298-commits</li>
-            {profile.phone && <li>{profile.phone}</li>}
+            {profile.phone && <li>{profile.phone.display}</li>}
           </ul>
         </header>
 
@@ -66,6 +66,7 @@ export function Curriculo() {
           <p>
             <strong>{edu.course}</strong> — {edu.institution} · {edu.hours} h · {edu.period} · {edu.status}
           </p>
+          <p className="cv__cert">Certificado verificável: {edu.certificateUrl.replace(/^https:\/\//, '')}</p>
           <p>{edu.highSchool}</p>
         </section>
 

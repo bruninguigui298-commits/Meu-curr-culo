@@ -14,6 +14,7 @@ export function Footer() {
         <nav aria-label="Rodapé">
           <ul className="footer__links">
             <li><a href={`mailto:${profile.email}`}>E-mail</a></li>
+            {profile.phone && <li><a href={`tel:${profile.phone.tel}`}>Telefone</a></li>}
             <li><a href={profile.linkedin} rel="noopener noreferrer" target="_blank">LinkedIn<span className="sr-only"> (abre em nova aba)</span></a></li>
             <li><a href={profile.github} rel="noopener noreferrer" target="_blank">GitHub<span className="sr-only"> (abre em nova aba)</span></a></li>
           </ul>

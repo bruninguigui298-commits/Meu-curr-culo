@@ -332,3 +332,10 @@ code { font-family: var(--mono); font-size: 0.9em; }
   .cv__projects li, .cv__list li { margin-bottom: 1px; }
   a { color: inherit; text-decoration: none; }
 }
+
+/* Formação (Sobre) */
+.edu { background: var(--paper-2); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; max-width: 760px; }
+.edu p { margin-bottom: 6px; }
+.edu p:last-child { margin-bottom: 0; }
+.edu__course { font-family: var(--serif); font-size: 30px; line-height: 1.1; }
+.cv__cert { font-family: var(--mono); font-size: 8.5pt; color: #555; overflow-wrap: anywhere; }

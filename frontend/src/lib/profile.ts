@@ -12,8 +12,8 @@ export const profile = {
   email: 'bruno12pereira472@gmail.com',
   linkedin: 'https://www.linkedin.com/in/bruno-pereira-5727ba238/',
   github: 'https://github.com/bruninguigui298-commits',
-  /** Telefone/WhatsApp: só publicar com autorização do Bruno. */
-  phone: null as string | null,
+  /** Publicação autorizada pelo Bruno (out/2026). */
+  phone: { display: '(19) 98170-4814', tel: '+5519981704814' } as { display: string; tel: string } | null,
   /** Foto: coloque o arquivo em frontend/public/fotos/ e o caminho aqui, ex.: '/fotos/bruno.jpg'. */
   photo: null as { src: string; alt: string } | null,
   /** Vídeo de apresentação (60–90 s): arquivo em public/video/ + legendas .vtt. */
@@ -26,6 +26,8 @@ export const profile = {
     period: 'mai/2026 – out/2026',
     status: 'Concluído',
     highSchool: 'Ensino Médio completo',
+    /** Verificação pública do SENAI (publicação autorizada pelo Bruno). */
+    certificateUrl: 'https://www.sp.senai.br/consulta-certificado?qrcode=51226171235/15724635',
   },
   /** Fonte: currículo em PDF enviado pelo Bruno. */
   experience: [

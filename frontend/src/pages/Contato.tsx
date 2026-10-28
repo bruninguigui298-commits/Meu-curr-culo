@@ -49,6 +49,7 @@ export function Contato() {
           </p>
           <ul className="contact__direct">
             <li><span>E-mail</span> <a href={`mailto:${profile.email}`}>{profile.email}</a></li>
+            {profile.phone && <li><span>Telefone</span> <a href={`tel:${profile.phone.tel}`}>{profile.phone.display}</a></li>}
             <li><span>LinkedIn</span> <a href={profile.linkedin} target="_blank" rel="noopener noreferrer">bruno-pereira-5727ba238<span className="sr-only"> (abre em nova aba)</span></a></li>
             <li><span>GitHub</span> <a href={profile.github} target="_blank" rel="noopener noreferrer">bruninguigui298-commits<span className="sr-only"> (abre em nova aba)</span></a></li>
           </ul>
